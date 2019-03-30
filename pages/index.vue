@@ -61,7 +61,7 @@
           <a href="mailto:pv@backlog.events">Напишите нам</a>
         </li>
         <li class="copyright">
-          © 2018 Backlog.Events
+          © 2019 Backlog.Events
         </li>
       </ul>
     </footer>
@@ -116,6 +116,7 @@ footer {
   grid-row-start: 2;
   grid-row-end: 3;
   padding: 32px 0;
+  max-width: 1056px;
 }
 section {
   height: 100vh;
@@ -124,6 +125,7 @@ section {
 }
 .content {
   padding-top: 140px;
+  max-width: 1056px;
 }
 h1 {
   margin-top: 1.2em;
@@ -202,7 +204,6 @@ ul > li > a:hover {
 }
 ul > li:last-child {
   float: right;
-  margin-right: 500px;
 }
 .success, .error {
   font-style: normal;
