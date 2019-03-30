@@ -233,12 +233,12 @@ export default {
     margin: 0 auto;
   }
   .content {
-    padding-top: 15vh;
+    padding-top: 12vh;
     width: 850px;
     margin: 0 auto;
   }
   h1 {
-    margin-top: 12vh;
+    margin-top: 8vh;
     font-weight: 800;
     font-size: 72px;
     line-height: 72px;
