@@ -116,8 +116,12 @@ form {
 }
 input[type=email] {
   width: 270px;
-  height: 45px;
+  height: 52px;
   padding-left: 16px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 input::placeholder {
   position: relative;
@@ -132,7 +136,8 @@ button {
   box-sizing: border-box;
   border-radius: 3px;
   color: white;
-  padding-top: 2px;
+  font-size: 15px;
+  padding-top: 4px;
 }
 ul {
   margin: 0;
