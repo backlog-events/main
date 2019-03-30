@@ -171,6 +171,10 @@ export default {
     color: #FFFFFF;
     height: 52px;
   }
+  button:active {
+    box-shadow: 0px 1px 2px rgba(104, 95, 240, 0.24);
+    background: #5851CC;
+  }
   ul {
     list-style: none;
     text-align: center;
