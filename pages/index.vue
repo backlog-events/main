@@ -2,8 +2,7 @@
   <section>
     <div class="content">
       <svg
-        width="200"
-        height="72"
+        class="logo"
         viewBox="0 0 200 72"
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
@@ -32,8 +31,8 @@
         </g>
       </svg>
 
-      <h1>Любим продуктовое комьюнити с 2019</h1>
-      <h2>Следите за обновлениями — будет бомба 💣</h2>
+      <h1>Любим продуктовое комьюнити с&nbsp;2019</h1>
+      <h2>Следите за обновлениями — будет&nbsp;бомба&nbsp;💣</h2>
       <form
         v-if="showForm"
         @submit.prevent="sendEmail">
@@ -47,7 +46,7 @@
       </form>
       <p
         v-if="success"
-        class="success">Спасибо! Будем на связи ✌️🎉😘</p>
+        class="success">Спасибо! Будем&nbsp;на&nbsp;связи&nbsp;✌️🎉😘</p>
       <p
         v-if="error"
         class="error">О нет, что-то пошло не так! 😡</p>
@@ -101,115 +100,222 @@ export default {
 </script>
 
 <style scoped>
-* {
-  font-family: Roboto;
+@media (max-width: 1024px) {
+  * {
+    font-family: Roboto;
+  }
+  section {
+    min-height: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  .content {
+    padding: 5vh 40px 0;
+    margin: 0 auto;
+  }
+  footer {
+    margin: 0 auto;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .logo {
+    height: 56px;
+  }
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 48px;
+  }
+  h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 44px;
+  }
+  form {
+    margin: 3vh 0;
+  }
+  input {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 52px;
+    width: 100%;
+    padding-left: 20px;
+  }
+  input:focus, button:focus {
+    outline: 0;
+  }
+  input::placeholder {
+    position: relative;
+    color: rgba(0, 0, 0, 0.36);
+  }
+  button {
+    box-shadow: 0px 4px 8px rgba(104, 95, 240, 0.24), 0px 1px 1px rgba(104, 95, 240, 0.12);
+    background: #685FF0;
+    border: 1px solid #685FF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    height: 52px;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    /* margin-top: 80px; */
+    margin-bottom: 32px;
+  }
+  ul > li {
+    margin-bottom: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  ul > li > a {
+    text-decoration: none;
+  }
+  ul > li > a:visited {
+    color: #685FF0;
+  }
+  .success, .error {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 40px;
+    height: 160px;
+  }
 }
-html {
-  height: 100%;
-}
-section {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
-}
-footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  padding: 32px 0;
-  max-width: 1056px;
-}
-section {
-  height: 100vh;
-  /* width: 100%; */
-  padding-left: 325px;
-}
-.content {
-  padding-top: 140px;
-  max-width: 1056px;
-}
-h1 {
-  margin-top: 1.2em;
-  font-weight: 800;
-  font-size: 72px;
-  line-height: 72px;
-  max-width: 800px;
-  margin-bottom: 0;
-}
-h2 {
-  margin-top: 1.5em;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-form {
-  margin-top: 50px;
-}
-input[type=email] {
-  width: 290px;
-  height: 52px;
-  padding-left: 16px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-input::placeholder {
-  position: relative;
-  color: rgba(0, 0, 0, 0.36);
-}
-button {
-  box-shadow: 0px 4px 8px rgba(104, 95, 240, 0.24), 0px 1px 1px rgba(104, 95, 240, 0.12);
-  width: 160px;
-  height: 52px;
-  background: #685FF0;
-  border: 1px solid #685FF0;
-  box-sizing: border-box;
-  border-radius: 3px;
-  color: white;
-  font-size: 15px;
-  padding-top: 4px;
-  transition: 0.175s;
-}
-button:hover {
-  box-shadow: 0px 8px 12px rgba(104, 95, 240, 0.24), 0px 1px 1px rgba(104, 95, 240, 0.2);
-  background: #7F77F2;
-}
-button:active {
-  box-shadow: 0px 1px 2px rgba(104, 95, 240, 0.24);
-  background: #5851CC;
-}
-button:focus,input:focus {
-  outline:0;
-}
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-ul > li {
-  float: left;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  padding-right: 32px;
-}
-ul > li > a {
-  text-decoration: none;
-  color: #685FF0;
-}
-ul > li > a:hover {
-  opacity: 0.8;
-}
-ul > li:last-child {
-  float: right;
-}
-.success, .error {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 24px;
-  margin-top: 64px;
+
+@media (min-width: 1024px) {
+  * {
+    font-family: Roboto;
+  }
+  .logo {
+    height: 72px;
+  }
+  html {
+    height: 100%;
+  }
+  section {
+    min-height: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+  }
+  footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 32px 0;
+    width: 850px;
+    margin: 0 auto;
+  }
+  .content {
+    padding-top: 100px;
+    width: 850px;
+    margin: 0 auto;
+  }
+  h1 {
+    margin-top: 1.2em;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+    max-width: 800px;
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-top: 1.5em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  form {
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+  }
+  input[type=email] {
+    width: 290px;
+    height: 52px;
+    padding-left: 16px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 3px;
+  }
+  input::placeholder {
+    position: relative;
+    color: rgba(0, 0, 0, 0.36);
+  }
+  button {
+    box-shadow: 0px 4px 8px rgba(104, 95, 240, 0.24), 0px 1px 1px rgba(104, 95, 240, 0.12);
+    width: 160px;
+    height: 52px;
+    background: #685FF0;
+    border: 1px solid #685FF0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    padding-top: 4px;
+    transition: 0.175s;
+  }
+  button:hover {
+    box-shadow: 0px 8px 12px rgba(104, 95, 240, 0.24), 0px 1px 1px rgba(104, 95, 240, 0.2);
+    background: #7F77F2;
+  }
+  button:active {
+    box-shadow: 0px 1px 2px rgba(104, 95, 240, 0.24);
+    background: #5851CC;
+  }
+  button:focus,input:focus {
+    outline:0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  ul > li {
+    float: left;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    padding-right: 32px;
+  }
+  ul > li > a {
+    text-decoration: none;
+    color: #685FF0;
+  }
+  ul > li > a:hover {
+    opacity: 0.8;
+  }
+  ul > li:last-child {
+    float: right;
+  }
+  .success, .error {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 64px;
+  }
 }
 </style>
