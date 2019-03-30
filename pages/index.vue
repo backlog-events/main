@@ -55,8 +55,12 @@ export default {
       try {
         await axios.post('https://hooks.zapier.com/hooks/catch/4701579/nqmu53/', {
           email: this.email
+        }, {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+          }
         });
-        this.sucess = true
+        this.success = true
       } catch (e) {
         this.error = true
       }
