@@ -54,7 +54,9 @@
     <footer>
       <ul>
         <li class="facebook">
-          <a href="https://www.facebook.com/backlog.events/">Facebook</a>
+          <a
+            href="https://www.facebook.com/backlog.events/"
+            target="_blank">Facebook</a>
         </li>
         <li class="email">
           <a href="mailto:pv@backlog.events">Напишите нам</a>
@@ -231,12 +233,12 @@ export default {
     margin: 0 auto;
   }
   .content {
-    padding-top: 100px;
+    padding-top: 15vh;
     width: 850px;
     margin: 0 auto;
   }
   h1 {
-    margin-top: 1.2em;
+    margin-top: 12vh;
     font-weight: 800;
     font-size: 72px;
     line-height: 72px;
