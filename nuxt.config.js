@@ -10,9 +10,13 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Backlog.Events Main Site' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:400,500' }
     ]
   },
+  css: [
+    '@assets/css/normalize.css'
+  ],
   /*
   ** Customize the progress bar color
   */
