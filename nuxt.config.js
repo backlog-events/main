@@ -3,11 +3,11 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Backlog.Events — любим продуктовое коммьюнити с 2019',
+    title: 'Backlog.Events',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Backlog.Events Main Site' }
+      { hid: 'description', name: 'description', content: 'Любим продуктовое коммьюнити с 2019' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
