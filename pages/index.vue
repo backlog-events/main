@@ -59,7 +59,7 @@
             target="_blank">Facebook</a>
         </li>
         <li class="email">
-          <a href="mailto:pv@backlog.events">Напишите нам</a>
+          <a href="mailto:hi@backlog.events">Напишите нам</a>
         </li>
         <li class="copyright">
           © 2019 Backlog.Events
